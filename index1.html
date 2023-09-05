@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prediction</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        h1, h2 {
+            text-align:center;
+            }
+    .form-container{
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>PREDICTION</h1>
+        <h2>FOOD_DELIVERY_TIME_PREDICTION</h2>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="form-container">
+                    <form action="/predict" method="POST">
+                        <div class="mb-5">
+                            <label for="">Delivery_person_Age</label>
+                            <input type="text" name="Delivery_person_Age" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Delivery_person_Ratings</label>
+                            <input type="text" name="Delivery_person_Ratings" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">distance_km</label>
+                            <input type="text" name="distance_km" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">avg_speed_kmph</label>
+                            <input type="text" name="avg_speed_kmph" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Road_traffic_density_High</label>
+                            <input type="text" name="Road_traffic_density_High" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Road_traffic_density_Jam</label>
+                            <input type="text" name="Road_traffic_density_Jam" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Road_traffic_density_Low</label>
+                            <input type="text" name="Road_traffic_density_Low" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Road_traffic_density_Medium</label>
+                            <input type="text" name="Road_traffic_density_Medium" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Type_of_order_Buffet</label>
+                            <input type="text" name="Type_of_order_Buffet" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Type_of_order_Drinks</label>
+                            <input type="text" name="Type_of_order_Drinks" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Type_of_order_Meal</label>
+                            <input type="text" name="Type_of_order_Meal" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Type_of_order_Snack</label>
+                            <input type="text" name="Type_of_order_Snack" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Festival_Yes</label>
+                            <input type="text" name="Festival_Yes" class="form-control">
+                        </div>
+                        <div class="mb-5">
+                            <label for="">Algorithm</label>
+                            <select name="algo" class="form-control">
+                                <option value="model2.pkl">Random Forest</option>
+                            </select>
+                        </div>
+                        <div class="mb-5">
+                            <button class="btn btn-success">Predict</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+</body>
+</html>
