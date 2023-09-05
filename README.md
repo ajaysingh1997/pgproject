@@ -1,4 +1,4 @@
-# PG PROJECT ON FOOD DELIVERY TIME PRDEICTION USING MACHINE LEARNING
+# PG PROJECT ON FOOD DELIVERY TIME PREDICTION USING MACHINE LEARNING
 
 In the modern era of digital convenience, online food delivery platforms
 have revolutionized the way people access their favorite meals. However, one
